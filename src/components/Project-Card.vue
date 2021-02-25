@@ -1,113 +1,90 @@
 <template>
-  <v-parallax
-      class="center"
-      height="1000"
-      src= "https://i.imgur.com/RnlncgD.jpg"
 
+  <v-card
+      style="max-width:98%; word-break: break-word"
+      class="flex round-card"
   >
-    <v-card
-        max-width="500"
-        class=""
+    <v-img
+        style="margin-top: 10%; max-width: 500px; max-height: 500px; position: inherit; top: 20px"
+        contain
+        :src="project.img"
+        class="center FancyGrad round-card"
+        height=500
     >
-      <v-img
-          style="margin: 40px 20px"
-          contain
-          :src="project.img"
-          class="FancyGrad"
-          height="400px"
-      >
-      </v-img>
+    </v-img>
 
-      <v-list class="" one-line>
+    <v-list one-line>
 
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>
-              <h1 class="center">
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title>
+            <h1 class="center bordered-text">
               {{ project.type }}
-              </h1>
-            </v-list-item-title>
-          </v-list-item-content>
+            </h1>
+          </v-list-item-title>
+        </v-list-item-content>
 
 
-        </v-list-item>
+      </v-list-item>
 
-        <v-list-item >
-          <v-list-item-content >
-            <v-list-item-title>
-              <h2 class="bordered-text Inset-Text">
-                {{ project.name }}
-              </h2>
-            </v-list-item-title>
-            <v-list-item-subtitle>
-              {{ project.subtype }}
-            </v-list-item-subtitle>
-          </v-list-item-content>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title>
+            <h2 class="bordered-text Inset-Text">
+              {{ project.name }}
+            </h2>
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
 
-        </v-list-item>
+      <v-divider/>
 
-        <v-divider />
+      <v-list-item>
 
-        <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="bordered-text">
+            {{ project.description }}
+          </v-list-item-title>
+        </v-list-item-content>
 
-          <v-list-item-content>
-            <v-list-item-title class="bordered-text">
-              {{ project.description }}
-            </v-list-item-title>
-          </v-list-item-content>
+      </v-list-item>
 
-        </v-list-item>
+      <v-divider/>
 
-        <v-divider />
+      <v-list-item class="center" v-for="link in project.links" :key="link">
+        <v-list-item-icon>
+          <v-hover v-slot="{ hover }">
+            <v-btn
+                icon
+                class="FancyGrad"
+                style="text-decoration:none"
+            >
+              <v-tooltip bottom>
+                <template v-slot:activator="{on}">
+                  <a
+                      style="text-decoration:none"
+                      :href="link.url">
+                    <v-icon
+                        style="text-decoration:none"
+                        x-large v-on="on"
+                        :color="changeColour(hover)"
+                    >
+                      {{ link.icon }}
+                    </v-icon>
 
-        <v-list-item class="center" v-for="link in project.links" :key="link" >
-          <v-list-item-icon class="" >
-            <v-hover v-slot:default="{ hover }" >
-            <v-btn icon >
-            <v-tooltip bottom >
-              <template v-slot:activator="{on}"  >
-                <a :href="link.url" style="text-decoration:none">
-
-                  <v-icon
-                    x-large v-on="on"
-                    :color="changeColour(hover)"
-                  >
-                    {{link.icon}}
-                  </v-icon>
-
-                </a>
+                  </a>
                 </template>
                 <span>
-                  {{link.name}}
+                  {{ link.name }}
                 </span>
-            </v-tooltip>
+              </v-tooltip>
             </v-btn>
-            </v-hover>
+          </v-hover>
+        </v-list-item-icon>
+      </v-list-item>
+    </v-list>
+  </v-card>
 
-            <!--            <v-tooltip>-->
-<!--              <a :href="x.url">-->
-<!--                <v-btn icon >-->
-<!--                  <v-icon x-large>-->
-<!--                      {{x.icon}}-->
-<!--                  </v-icon>-->
-<!--                </v-btn>-->
-<!--              </a>-->
-<!--            </v-tooltip>-->
-
-          </v-list-item-icon>
-
-<!--          <v-list-item-content style="margin: auto 30px">-->
-<!--            <v-list-item-title>-->
-<!--              <h1>-->
-<!--              {{ x.linktype }}-->
-<!--              </h1>-->
-<!--            </v-list-item-title>-->
-<!--          </v-list-item-content>-->
-        </v-list-item>
-      </v-list>
-    </v-card>
-
-  </v-parallax>
 </template>
 
 <script>
@@ -116,7 +93,7 @@ export default {
   props: {project: Array},
   methods: {
     changeColour(hover) {
-      return hover?"red": "white"
+      return hover ? "red" : "black"
     }
   }
 }
@@ -144,16 +121,28 @@ export default {
   text-shadow: 0.5px 0px 2px rgba(255, 255, 255, 0.5)
   -webkit-background-clip: text
 
+.round-card
+  border-radius: 25px
+
+.center
+  display: flex
+  margin-left: auto
+  margin-right: auto
+  width: 90%
+
+code
+  overflow-wrap: break-word
+
 </style>
 
 <style>
 /*Gradient are fun*/
 .FancyGrad {
-  background: linear-gradient(45deg, #59C173, #a17fe0,#5D26C1);
+  background: linear-gradient(45deg, #59C173, #a17fe0, #5D26C1);
   background-size: 400% 400%;
-  border-bottom: 2px solid #3C4346;
   animation: gradient 10s ease infinite;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0 50%;
@@ -163,6 +152,8 @@ export default {
   }
   100% {
     background-position: 0 50%;
-  }}
+  }
+}
+
 
 </style>

@@ -2,28 +2,35 @@
   <div>
     <v-card
         dark
-        height="1000"
+        height="100vh"
         elevation="24"
     >
-      <v-carousel
-          height="1000"
-          style="display: block"
-          :continuous="true"
-          :cycle="cycle"
-          :show-arrows="false"
-          delimiter-icon="mdi-minus"
+      <v-parallax
+          height=""
+          src="https://i.imgur.com/RnlncgD.jpg"
       >
-        <v-carousel-item
-            v-for="(x) in projects"
-            :key="x"
-        >
-          <div>
-            <ProjectCard v-bind:project="x"/>
-          </div>
-        </v-carousel-item>
-      </v-carousel>
+        <v-container class="flex center round-card">
+          <v-carousel
+              class="round-card"
+              height="1100"
+              :continuous="true"
+              :cycle="cycle"
+              :show-arrows="false"
+              delimiter-icon="mdi-minus"
+          >
+            <v-carousel-item
+                v-for="(x) in projects"
+                :key="x"
+            >
+              <div style="height: 50px">
+                <ProjectCard v-bind:project="x"/>
 
+              </div>
 
+            </v-carousel-item>
+          </v-carousel>
+        </v-container>
+      </v-parallax>
       <v-list two-line>
         <v-list-item>
           <v-list-item-avatar>
@@ -63,7 +70,7 @@ export default {
                 {
                   "url": "https://github.com/OzymandiasThe2/Cipher-Text-Project",
                   "name": "GitHub",
-                  "icon":"fab fa-github"
+                  "icon": "fab fa-github"
                 },
               ],
 
@@ -78,7 +85,7 @@ export default {
                 {
                   "url": "https://github.com/OzymandiasThe2/fork-bomb",
                   "name": "GitHub",
-                  "icon":"fab fa-github"
+                  "icon": "fab fa-github"
                 },
               ],
         },
@@ -92,7 +99,7 @@ export default {
                 {
                   "url": "https://github.com/OzymandiasThe2/Tic-Tac-Toe-Game-Mips-Assembly",
                   "name": "GitHub",
-                  "icon":"fab fa-github"
+                  "icon": "fab fa-github"
                 },
               ],
         },
@@ -106,7 +113,7 @@ export default {
                 {
                   "url": "https://ontariotechu.ca/",
                   "linktype": "GitHub",
-                  "icon":"fas fa-graduation-cap"
+                  "icon": "fas fa-graduation-cap"
 
                 },
               ],
@@ -121,7 +128,7 @@ export default {
                 {
                   "url": "https://github.com/OzymandiasThe2/DnD",
                   "linktype": "GitHub",
-                  "icon":"fab fa-github"
+                  "icon": "fab fa-github"
                 },
               ],
         },
@@ -134,5 +141,16 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+code
+  overflow-wrap: break-word
+
+.center
+  display: flex
+  margin-left: auto
+  margin-right: auto
+  width: 90%
+
+.round-card
+  border-radius: 40px
 
 </style>

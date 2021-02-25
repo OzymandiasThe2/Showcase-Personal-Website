@@ -7,7 +7,11 @@
           prominent
           src="https://i.imgur.com/RnlncgD.jpg"
       >
-        <v-toolbar-title>Networking and IT Security Undergraduate</v-toolbar-title>
+        <v-toolbar-title
+            class="wrapper bordered-text"
+        >
+          Networking and IT Security Undergraduate
+        </v-toolbar-title>
         <v-spacer/>
 
         <a :href="pdfLink">
@@ -230,4 +234,10 @@ body .cybr-btn + .cybr-btn {
   --primary-hue: 260;
 }
 
+.bordered-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+}
 </style>
