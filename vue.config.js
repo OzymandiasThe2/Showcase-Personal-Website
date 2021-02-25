@@ -6,7 +6,7 @@ module.exports = {
     config.module
         .rule("pdf")
         .test(/.pdf$/)
-        .use("file-loader")
+        .use("file-loader?name=[path][name].[ext]")
         .loader("file-loader");
   }
 }

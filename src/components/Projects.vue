@@ -99,7 +99,7 @@ export default {
         {
           "type": "Education",
           "name": "University of Ontario Institute of Technology",
-          "description": "Currently an undergrad student working toward his bachelors of Networking \n and IT Security",
+          "description": "Currently an undergrad student working toward my bachelors of Networking \n and IT Security",
           "img": require("@/assets/images/ontariotechu-og-image.png"),
           "links":
               [
