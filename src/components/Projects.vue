@@ -6,7 +6,7 @@
         elevation="24"
     >
       <v-parallax
-          height=""
+          height="1100"
           src="https://i.imgur.com/RnlncgD.jpg"
       >
         <v-container class="flex center round-card">
@@ -70,7 +70,7 @@ export default {
                 {
                   "url": "https://github.com/OzymandiasThe2/Cipher-Text-Project",
                   "name": "GitHub",
-                  "icon": "fab fa-github"
+                  "icon": "fab fa-github",
                 },
               ],
 

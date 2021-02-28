@@ -23,26 +23,27 @@
           RedHat, and hope for an opportunity to make that dream come true.</p>
         <div>
           <v-simple-table
-              dark
-              class="FancyGrad"
+
           >
             <template
-
                 v-slot:default
             >
               <thead>
-              <tr>
-                <th class="">
-                  <h1>Requirement</h1>
+              <tr class="MetalGrad">
+
+                <th style="border: #5D26C1">
+                  <h1>REQUIREMENT</h1>
                 </th>
+
                 <th>
-                  <h1>Design</h1>
+                  <h1>DESIGN</h1>
                 </th>
               </tr>
 
 
+
               </thead>
-              <tbody class="text-center">
+              <tbody class="FancyGrad text-center">
               <tr
                   v-for="x in skills"
                   :key="x.requirement"
@@ -72,7 +73,7 @@ export default {
   data() {
     return {
       skills: [
-        {"requirement": "Design", "solution": "Photoshop, Abode, GIMP, Microsoft Office Suite"},
+        {"requirement": "Editing", "solution": "Photoshop, Abode, GIMP, Microsoft Office Suite"},
         {"requirement": "Front-End", "solution": "Vue.js, HTML, CSS, JavaScript, Materialize"},
         {"requirement": "Back-End", "solution": "Node.js, Mongo, Firebase Firestore, PHP, Express.js"},
         {"requirement": "Scripting Languages", "solution": "Python, C++ "},
@@ -91,13 +92,35 @@ export default {
 </style>
 
 <style>
+
+
+
+a {
+  color: #fe921f;
+  text-decoration: none;
+}
+
+a:hover {
+  lighting-color: blueviolet;
+  color: #59C173;
+}
+
 /*Gradient Header for the fun*/
 .FancyGrad {
-  background: linear-gradient(45deg, #59C173, #a17fe0,#5D26C1);
+  background: linear-gradient(45deg, #59C173, #a17fe0, #5D26C1);
   background-size: 400% 400%;
   border-bottom: 2px solid #3C4346;
   animation: gradient 15s ease infinite;
 }
+
+.MetalGrad {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  background-size: 400% 400%;
+  border-bottom: 2px solid #3C4346;
+  animation: gradient 15s ease infinite;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0 50%;
@@ -107,6 +130,7 @@ export default {
   }
   100% {
     background-position: 0 50%;
-  }}
+  }
+}
 
 </style>

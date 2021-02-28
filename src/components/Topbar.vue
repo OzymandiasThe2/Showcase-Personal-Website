@@ -1,27 +1,28 @@
 <template>
   <div>
 
-      <v-toolbar
-          id="top-nav1"
-          dark
-          prominent
-          src="https://i.imgur.com/RnlncgD.jpg"
+    <v-toolbar
+        id="top-nav1"
+        dark
+        prominent
+        src="https://i.imgur.com/RnlncgD.jpg"
+    >
+      <v-toolbar-title
+          class="wrapper bordered-text"
       >
-        <v-toolbar-title
-            class="wrapper bordered-text"
-        >
-          Networking and IT Security Undergraduate
-        </v-toolbar-title>
-        <v-spacer/>
 
-        <a :href="pdfLink">
+        Networking and IT Security Undergraduate
+      </v-toolbar-title>
+      <v-spacer/>
+
+      <a :href="pdfLink">
         <button class="cybr-btn">
           Résumé<span aria-hidden>_</span>
           <span aria-hidden class="cybr-btn__glitch">Cover Letter</span>
           <span aria-hidden class="cybr-btn__tag"></span>
         </button>
-        </a>
-      </v-toolbar>
+      </a>
+    </v-toolbar>
 
   </div>
 </template>
@@ -31,7 +32,7 @@ export default {
   name: "Topbar",
   data() {
     return {
-      pdfLink: require("@/assets/Shriji Shah - Cover Letter + Resume V2.pdf"),
+      pdfLink: require("@/assets/Shriji Shah - Cover + Resume.pdf"),
     }
   }
 }
@@ -103,6 +104,7 @@ body .cybr-btn + .cybr-btn {
 .cybr-btn:hover {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
 }
+
 .cybr-btn:active {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
 }

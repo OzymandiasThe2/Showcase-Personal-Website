@@ -1,7 +1,7 @@
 <template>
 
   <v-card
-      style="max-width:98%; word-break: break-word"
+      style="max-width:98%; word-break: break-word;"
       class="flex round-card"
   >
     <v-img
@@ -53,25 +53,25 @@
 
       <v-list-item class="center" v-for="link in project.links" :key="link">
         <v-list-item-icon>
-          <v-hover v-slot="{ hover }">
+          <v-hover v-slot:default="{ hover }">
             <v-btn
+                dark
                 icon
-                class="FancyGrad"
                 style="text-decoration:none"
             >
               <v-tooltip bottom>
-                <template v-slot:activator="{on}">
+                <template v-slot:activator="{ on }">
                   <a
+                      :href="link.url"
                       style="text-decoration:none"
-                      :href="link.url">
+                  >
                     <v-icon
-                        style="text-decoration:none"
                         x-large v-on="on"
-                        :color="changeColour(hover)"
-                    >
+                        :color=changeColor(hover)>
+                      >
                       {{ link.icon }}
-                    </v-icon>
 
+                    </v-icon>
                   </a>
                 </template>
                 <span>
@@ -92,9 +92,9 @@ export default {
   name: "Project-Card",
   props: {project: Array},
   methods: {
-    changeColour(hover) {
-      return hover ? "red" : "black"
-    }
+    changeColor(hover) {
+      return hover ? this.black : this.blue
+    },
   }
 }
 
