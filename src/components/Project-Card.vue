@@ -118,7 +118,7 @@ export default {
   font: bold 20px arial
   background-color: burlywood
   color: transparent
-  text-shadow: 0.5px 0px 2px rgba(255, 255, 255, 0.5)
+  text-shadow: 0.5px 0 2px rgba(255, 255, 255, 0.5)
   -webkit-background-clip: text
 
 .round-card

@@ -15,11 +15,14 @@
       </v-toolbar-title>
       <v-spacer/>
 
-      <a :href="pdfLink">
-        <button class="cybr-btn">
-          Résumé<span aria-hidden>_</span>
-          <span aria-hidden class="cybr-btn__glitch">Cover Letter</span>
-          <span aria-hidden class="cybr-btn__tag"></span>
+      <a
+          :href=pdfLink :download=pdfName
+      >
+        <button
+            class="cybr-btn">
+          Résumé
+          <span  class="cybr-btn__glitch">Cover Letter</span>
+          <span  class="cybr-btn__tag"></span>
         </button>
       </a>
     </v-toolbar>
@@ -32,9 +35,10 @@ export default {
   name: "Topbar",
   data() {
     return {
-      pdfLink: require("@/assets/Shriji Shah - Cover + Resume.pdf"),
+      pdfLink: require("@/assets/ShrijiShah-Cover+Resume.pdf"),
+      pdfName: "Shriji_Shah-Cover+Resume.pdf",
     }
-  }
+  },
 }
 </script>
 
