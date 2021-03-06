@@ -8,6 +8,7 @@
         style="margin-top: 10%; max-width: 500px; max-height: 500px; position: inherit; top: 20px"
         contain
         :src="project.img"
+        alt="image error, contact site host"
         class="center FancyGrad round-card"
         height=500
     >
