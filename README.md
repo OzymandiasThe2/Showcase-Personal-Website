@@ -28,8 +28,4 @@ Check http://localhost:8080/ or http://192.168.0.12:8080/
 ```
 npm run test
 ```
-#### Lints fixes files
 
-```
-npm run lint
-```
