@@ -127,7 +127,7 @@ export default {
           "links":
               [
                 {
-                  "url": "https://github.com/OzymandiasThe2/DnD",
+                  "url": "https://github.com/OzymandiasThe2/DnD_Project",
                   "linktype": "GitHub",
                   "icon": "fab fa-github"
                 },
