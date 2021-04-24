@@ -18,10 +18,60 @@
       <v-card-text>
         <p> I am an undergraduate from the University of Ontario Institute of Technology (OnTechU) currently working
           towards a bachelors degree in Networking and IT Security, but my passion for security goes back much further
-          than that. Even as a kid, I loved messing around with computers. I just can't describe the satisfaction I felt
-          when I optimized. For as long as I can remember, I've dreamt of working at large companies like Google or
-          RedHat, and hope for an opportunity to make that dream come true.</p>
+          than that.
+          I am enthusiastic about learning cutting edge technology and I push myself to learn and innovative. I really
+          enjoy python development and kotlin development.
+          As part of my undergraduate studies I've learned core concepts in fundamental and advanced networking,
+          enterprise‑level network engineering, cloud computing, programming, scripting, and many additional technical
+          topics.
+          Eventually I want to specialize in cryptography, IT policies, malware analysis, and IT forensics.
+        </p>
+        <v-divider/>
+        <v-container fill-height fluid>
+          <v-row class="text-center">
+
+            <v-col
+                v-for="x in love"
+                :key="x.icon"
+            >
+              <v-col>
+                <v-icon
+                    x-large
+                    :color="x.color"
+                >
+                  {{ x.icon }}
+                </v-icon>
+              </v-col>
+              <v-col>
+                {{ x.name }}
+              </v-col>
+            </v-col>
+          </v-row>
+          <v-row class="text-center">
+
+            <v-col
+                v-for="x in activities"
+                :key="x.icon"
+            >
+              <v-col>
+                <v-icon
+                    x-large
+                    :color="x.color"
+                >
+                  {{ x.icon }}
+                </v-icon>
+              </v-col>
+              <v-col>
+                {{ x.name }}
+              </v-col>
+            </v-col>
+
+          </v-row>
+        </v-container>
+
+
         <div>
+
           <v-simple-table
 
           >
@@ -39,7 +89,6 @@
                   <h1>DESIGN</h1>
                 </th>
               </tr>
-
 
 
               </thead>
@@ -78,7 +127,25 @@ export default {
         {"requirement": "Back-End", "solution": "Node.js, Mongo, Firebase Firestore, PHP, Express.js"},
         {"requirement": "Scripting Languages", "solution": "Python, C++ "},
         {"requirement": "Operating Systems", "solution": "Windows, Kali Linux"},
-      ]
+      ],
+      love: [
+        {"icon": "Things I'm Passionate About:", "color": "#fe921f"},
+        {"icon": "fab fa-vuejs", "name": "VueJS", "color": "#41B883"},
+        {"icon": "fab fa-html5", "name": "HMTL", "color": "#fe921f"},
+        {"icon": "fab fa-css3-alt", "name": "CSS", "color": "#264de4"},
+        {"icon": "fab fa-js", "name": "JavaScript", "color": "#f0db4f"},
+        {"icon": "fab fa-python", "name": "Python", "color": "#FFE873"},
+        {"icon": "fab fa-windows", "name": "Windows OS", "color": "#00BCF2"},
+      ],
+      activities: [
+        {"icon": "Additional Skills:"},
+        {"icon": "fab fa-python", "name": "Scripting"},
+        {"icon": "fas fa-ticket-alt", "name": "Ticketing"},
+        {"icon": "fas fa-desktop", "name": "Desktop Support"},
+        {"icon": "fas fa-palette", "name": "Web Design"},
+        {"icon": "fas fa-book", "name": "Technical Documentation"},
+        {"icon": "fas fa-gamepad", "name": "Game Development"},
+      ],
     }
   }
 
@@ -92,7 +159,6 @@ export default {
 </style>
 
 <style>
-
 
 
 a {
@@ -120,6 +186,7 @@ a:hover {
   border-bottom: 2px solid #3C4346;
   animation: gradient 15s ease infinite;
 }
+
 
 @keyframes gradient {
   0% {

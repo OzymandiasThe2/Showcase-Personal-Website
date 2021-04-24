@@ -41,14 +41,37 @@
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>shrijishah@hotmail.com</v-list-item-title>
-            <v-list-item-subtitle>Author</v-list-item-subtitle>
-            <v-list-item-subtitle>Made with Vuetify</v-list-item-subtitle>
+            <v-list-item-subtitle>Made with VueJS</v-list-item-subtitle>
+          </v-list-item-content>
+          <v-list-item-avatar>
+            <v-icon>
+              fab fa-linkedin
+            </v-icon>
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title>LinkedIn</v-list-item-title>
+            <v-list-item-subtitle>
+              <a href="https://www.linkedin.com/in/shriji-shah-92771019a">linkedin.com/in/shriji-shah-92771019a</a>
+            </v-list-item-subtitle>
+          </v-list-item-content>
+          <v-list-item-avatar>
+            <v-icon>
+              fab fa-github
+            </v-icon>
+          </v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title>GitHub</v-list-item-title>
+            <v-list-item-subtitle>
+              <a href="https://github.com/OzymandiasThe2">github.com/OzymandiasThe2</a>
+            </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
+
     </v-card>
 
   </div>
+
 </template>
 
 <script>
@@ -130,6 +153,20 @@ export default {
                   "url": "https://github.com/OzymandiasThe2/DnD_Project",
                   "linktype": "GitHub",
                   "icon": "fab fa-github"
+                },
+              ],
+        },
+        {
+          "type": "Capture the Flag Competition",
+          "name": "UOIT's TacOps Fall 2020 CTF",
+          "description": "Achieved fourth place in a capture the flag hosted by the school's networking society, NETsoc. During the competition my group displayed knowledge in databases, stenography, encryption/decryption, programming, and fundamental networking and security knowledge.",
+          "img": require("@/assets/images/netsoc-tacops.jpg"),
+          "links":
+              [
+                {
+                  "url": "https://netsocot.com",
+                  "linktype": "Networking Society",
+                  "icon": "fas fa-award"
                 },
               ],
         },
