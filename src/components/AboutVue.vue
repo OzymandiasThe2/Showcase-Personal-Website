@@ -123,9 +123,9 @@ export default {
     return {
       skills: [
         {"requirement": "Editing", "solution": "Photoshop, Abode, GIMP, Microsoft Office Suite"},
-        {"requirement": "Front-End", "solution": "Vue.js, HTML, CSS, JavaScript, Materialize"},
-        {"requirement": "Back-End", "solution": "Node.js, Mongo, Firebase Firestore, PHP, Express.js"},
-        {"requirement": "Scripting Languages", "solution": "Python, C++ "},
+        {"requirement": "Front-End", "solution": "VueJS, HTML, CSS, JavaScript, Materialize"},
+        {"requirement": "Back-End", "solution": "NodeJS, Mongo, Firebase Firestore, PHP, Express.js"},
+        {"requirement": "Scripting Languages", "solution": "Python, Kotlin, Java, C++ "},
         {"requirement": "Operating Systems", "solution": "Windows, Kali Linux"},
       ],
       love: [
@@ -135,11 +135,15 @@ export default {
         {"icon": "fab fa-css3-alt", "name": "CSS", "color": "#264de4"},
         {"icon": "fab fa-js", "name": "JavaScript", "color": "#f0db4f"},
         {"icon": "fab fa-python", "name": "Python", "color": "#FFE873"},
+        {"icon": "fab fa-java", "name": "Kotlin/Java", "color": "#f89820"},
+        {"icon": "fab fa-linux", "name": "Linux", "color": "#E95420"},
         {"icon": "fab fa-windows", "name": "Windows OS", "color": "#00BCF2"},
       ],
       activities: [
         {"icon": "Additional Skills:"},
         {"icon": "fab fa-python", "name": "Scripting"},
+        {"icon": "fab fa-redhat", "name": "Security Fundamentals"},
+        {"icon": "fas fa-network-wired", "name": "Networking Fundamentals"},
         {"icon": "fas fa-ticket-alt", "name": "Ticketing"},
         {"icon": "fas fa-desktop", "name": "Desktop Support"},
         {"icon": "fas fa-palette", "name": "Web Design"},

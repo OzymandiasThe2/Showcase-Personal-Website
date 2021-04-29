@@ -1,11 +1,11 @@
 <template>
 
   <v-card
-      style="max-width:98%; word-break: break-word;"
+      style="max-width:100%; word-break: break-word;"
       class="flex round-card"
   >
     <v-img
-        style="margin-top: 10%; max-width: 500px; max-height: 500px; position: inherit; top: 20px"
+        style="margin-top: 10%; max-width: 50%; max-height: 250px; position: inherit; top: 20px"
         contain
         :src="project.img"
         alt="image error, contact site host"

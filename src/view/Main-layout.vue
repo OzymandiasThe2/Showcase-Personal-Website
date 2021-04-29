@@ -3,6 +3,7 @@
     <Topbar ref="pdf"  id="top-nav"/>
     <about-vue id="about-me"/>
     <Projects id="projects"/>
+    <Footer id="footer"/>
 
   </div>
 </template>
@@ -12,9 +13,10 @@ import AboutVue from "@/components/AboutVue";
 // import DesktopNav from "@/components/DesktopNav";
 import Topbar from "@/components/Topbar";
 import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 export default {
   name: "Main-layout",
-  components: {Projects, Topbar, AboutVue}
+  components: {Footer, Projects, Topbar, AboutVue}
 }
 </script>
 
