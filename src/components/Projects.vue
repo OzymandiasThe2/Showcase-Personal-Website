@@ -1,109 +1,164 @@
 <template>
   <v-app id="inspire">
-    <v-card
-        dark
+    <div
+        style="background: #1E1E1E"
     >
-
-      <v-row
-          no-gutters>
-        <v-col
-            v-for="p in projects"
-            :key="p"
-            cols="12"
-            sm="4"
-
+      <v-container
+      >
+        <v-card
+            dark
         >
-          <v-dialog
-              transition="dialog-top-transition"
-              open-delay="0"
-              max-width="600"
+          <v-container
+              style="margin-bottom: 50px"
           >
-            <template v-slot:activator="{ on, attrs }">
-
-              <v-card
-                  min-height="100"
-                  class="pa-2 text-wrap"
-                  tile
+            <v-row
+                no-gutters
+            >
+              <v-col
+                  v-for="p in projects"
+                  :key="p"
+                  cols="12"
+                  sm="6"
               >
-                <v-system-bar
-                    lights-out
-                    class="header"
+                <v-dialog
+                    :fullscreen="$vuetify.breakpoint.xs"
+                    transition="dialog-top-transition"
+                    open-delay="0"
+                    max-width="500"
                 >
+                  <template v-slot:activator="{ on, attrs }">
 
-                  {{ p.type }}
-                </v-system-bar>
-                <v-card
-                    class="mx-auto"
-
-                >
-                  <v-card-title
-                      class="center text-wrap text-center"
-                      style="overflow-y: auto; height: 150px"
-                  >
-                    {{ p.name }}
-                  </v-card-title>
-                  <v-card-text
-                    style="overflow-y: auto; height: 150px"
-                  >
-                    {{ p.description }}
-                  </v-card-text>
-                  <v-img
-                      contain
-                      class="center"
-                      min-height="250"
-                      min-width="250"
-                      max-height="250"
-                      max-width="250"
-                      :src="p.img"
-                  >
-
-                  </v-img>
-
-
-                  <v-card-actions>
-                    <v-btn
+                    <v-card
                         outlined
-                        rounded
-                        text
+                        min-height="500"
+                        max-height="800"
+                        class="pa-2 text-wrap"
+                        tile
                     >
-                      Button
-                    </v-btn>
+                      <v-card-title
+                          class="header center"
+                          style="overflow-y: auto; font-family: 'Arial Rounded MT Bold',serif;margin-bottom: -20px"
+                      >
+                        <p
+                            style="width: 100%;min-height: 65px"
+                        >
+                          {{ p.type }}
+                        </p>
+                      </v-card-title>
+                      <v-card
+                          elevation="0"
+                          class="mx-auto"
+                      >
+                        <v-card-title
+                            class="center text-wrap text-center"
+                            style="overflow-y: auto; height: 180px; font-family: Hack,serif"
+                        >
+                          <p
+                              style="width: 100%"
+                          >
+                            {{ p.name }}
+                          </p>
+                        </v-card-title>
 
-                    <v-btn
-                        outlined
-                        rounded
-                        text
-                        v-bind="attrs"
-                        v-on="on"
-                    >
-                      Check Me Out
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-card>
-            </template>
-            <template v-slot:default="dialog">
-              <v-card dark>
-                <v-card-title class="headline">
-                  {{ p.name }}
-                </v-card-title>
-                <v-card-text>{{ p.description }}</v-card-text>
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                  <v-btn
-                      color="green darken-1"
-                      text
-                      @click="dialog.value = false"
+                        <v-img
+                            contain
+                            class="center"
+                            min-height="250"
+                            min-width="250"
+                            max-height="250"
+                            max-width="250"
+                            :src="p.img"
+                        >
+
+                        </v-img>
+
+                        <v-card-actions
+                            style="max-height: 80px"
+                        >
+                          <v-list-item class="center">
+                            <v-list-item-icon>
+
+                              <v-btn
+                                  outlined
+                                  v-for="links in p.links"
+                                  :key="links"
+                                  icon
+                                  fab
+                                  dark
+                                  elevation="5"
+                                  color="green darken-1"
+
+                              >
+
+                                <a
+                                    :href="links.url"
+                                    text-decoration="none"
+                                    style="text-decoration: none"
+
+                                >
+                                  <v-icon
+                                      dark
+                                      :href="links.url"
+                                      x-large
+                                  >
+                                    {{ links.icon }}
+                                  </v-icon>
+                                </a>
+                              </v-btn>
+                            </v-list-item-icon>
+                          </v-list-item>
+
+                          <v-btn
+                              outlined
+                              elevation="10"
+                              rounded
+                              text
+                              v-bind="attrs"
+                              v-on="on"
+                              style="font-family: 'Nirmala UI',serif;"
+                          >
+                            Information
+                          </v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-card>
+                  </template>
+                  <template
+                      v-slot:default="dialog"
                   >
-                    Close
-                  </v-btn>
-                </v-card-actions>
-              </v-card>
-            </template>
-          </v-dialog>
-        </v-col>
-      </v-row>
-    </v-card>
+                    <v-card
+                        dark
+                    >
+                      <v-card-title
+                          class="headline"
+                          style="font-family: 'Nirmala UI',serif;"
+                      >
+                        {{ p.name }}
+                      </v-card-title>
+                      <v-card-text
+                          style="font-family: 'Nirmala UI',serif;">
+                        {{ p.description }}
+                      </v-card-text>
+                      <v-card-actions>
+                        <v-spacer/>
+                        <v-btn
+                            color="green darken-1"
+                            text
+                            @click="dialog.value = false"
+                        >
+                          Close
+                        </v-btn>
+                      </v-card-actions>
+                    </v-card>
+                  </template>
+                </v-dialog>
+              </v-col>
+            </v-row>
+
+          </v-container>
+        </v-card>
+      </v-container>
+    </div>
   </v-app>
 </template>
 
@@ -199,6 +254,7 @@ export default {
               ],
         },
       ],
+
     }
   },
 }
@@ -222,17 +278,13 @@ code
 
 
 .header
-  padding: 60px
   text-align: center
-  background: #1abc9c
+  margin: auto
   color: white
   font-size: 30px
 
 .v-card__text, .v-card__title
-  word-break: normal /* maybe !important  */
-
-</style>
-<style>
-
+  word-break: normal
+/* maybe !important  */
 
 </style>

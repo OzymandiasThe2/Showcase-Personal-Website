@@ -1,119 +1,170 @@
 <template>
-  <v-flex>
-    <v-card
-        dark
+  <div
+      style="background: #1E1E1E"
+  >
+    <v-container
     >
-      <v-flex
-          align-self-center
-      >
-      </v-flex>
-      <v-card-title>
-        <v-avatar>
-          <v-icon style="justify-content: center" class="fas fa-user-secret"></v-icon>
-        </v-avatar>
-        <p>About Me</p>
-        <v-spacer/>
-        <h1>Shriji Shah</h1>
-      </v-card-title>
-      <v-card-text>
-        <p> I am an undergraduate from the University of Ontario Institute of Technology (OnTechU) currently working
-          towards a bachelors degree in Networking and IT Security, but my passion for security goes back much further
-          than that.
-          I am enthusiastic about learning cutting edge technology and I push myself to learn and innovative. I really
-          enjoy python development and kotlin development.
-          As part of my undergraduate studies I've learned core concepts in fundamental and advanced networking,
-          enterprise‑level network engineering, cloud computing, programming, scripting, and many additional technical
-          topics.
-          Eventually I want to specialize in cryptography, IT policies, malware analysis, and IT forensics.
-        </p>
-        <v-divider/>
-        <v-container fill-height fluid>
-          <v-row class="text-center">
-
-            <v-col
-                v-for="x in love"
-                :key="x.icon"
+      <v-flex>
+        <v-card
+            dark
+        >
+          <v-flex
+              align-self-center
+          >
+          </v-flex>
+          <v-card-title>
+            <img
+                src="@/assets/images/websiteLogo.png"
+                style="display: block;margin-left: auto;margin-right: auto;margin-bottom: -70px"
+            />
+            <h2
+                style="font-family: 'Nirmala UI',serif;"
             >
-              <v-col>
-                <v-icon
-                    x-large
-                    :color="x.color"
-                >
-                  {{ x.icon }}
-                </v-icon>
-              </v-col>
-              <v-col>
-                {{ x.name }}
-              </v-col>
-            </v-col>
-          </v-row>
-          <v-row class="text-center">
+              About Me
+            </h2>
 
-            <v-col
-                v-for="x in activities"
-                :key="x.icon"
-            >
-              <v-col>
-                <v-icon
-                    x-large
-                    :color="x.color"
-                >
-                  {{ x.icon }}
-                </v-icon>
-              </v-col>
-              <v-col>
-                {{ x.name }}
-              </v-col>
-            </v-col>
-
-          </v-row>
-        </v-container>
-
-
-        <div>
-
-          <v-simple-table
+            <v-spacer/>
+            <h1
+                style="font-family: 'Nirmala UI',serif; padding-right: 70px">
+              Shriji Shah
+            </h1>
+          </v-card-title>
+          <v-card-text
 
           >
-            <template
-                v-slot:default
+            <p
+                style="text-indent: 50px;font-family: 'Nirmala UI',serif; font-size: large;margin-right: 50px;margin-left: 50px;padding-bottom: 15px"
             >
-              <thead>
-              <tr class="MetalGrad">
+              I am an undergraduate from the University of Ontario Institute of Technology (OnTechU) currently working
+              towards a bachelors degree in Networking and IT Security, but my passion for security goes back much
+              further
+              than that.
+              I am enthusiastic about learning cutting edge technology and I push myself to learn and innovative. I
+              really
+              enjoy python development and kotlin development.
+              As part of my undergraduate studies I've learned core concepts in fundamental and advanced networking,
+              enterprise‑level network engineering, cloud computing, programming, scripting, and many additional
+              technical
+              topics.
+              Eventually I want to specialize in cryptography, IT policies, malware analysis, and IT forensics.
+            </p>
+            <v-divider/>
+            <v-container
+                fill-height fluid
+                style="padding-left: 50px;padding-right: 50px"
+            >
+              <v-row class="text-center">
 
-                <th style="border: #5D26C1">
-                  <h1>REQUIREMENT</h1>
-                </th>
+                <v-col
+                    v-for="x in love"
+                    :key="x.icon"
+                >
+                  <v-col>
+                    <v-icon
+                        x-large
+                        :color="x.color"
+                    >
+                      {{ x.icon }}
+                    </v-icon>
+                  </v-col>
+                  <v-col
+                  >
+                    <h2
+                        style="font-family: 'Nirmala UI',serif;"
+                    >
+                      {{ x.name }}
+                    </h2>
+                  </v-col>
+                </v-col>
+              </v-row>
 
-                <th>
-                  <h1>DESIGN</h1>
-                </th>
-              </tr>
+
+              <v-row class="text-center">
+
+                <v-col
+                    v-for="x in activities"
+                    :key="x.icon"
+                >
+                  <v-col>
+                    <v-icon
+                        x-large
+                        :color="x.color"
+                    >
+                      {{ x.icon }}
+                    </v-icon>
+                  </v-col>
+                  <v-col>
+                    <h2
+                        style="font-family: 'Nirmala UI',serif;"
+                    >
+                      {{ x.name }}
+                    </h2>
+                  </v-col>
+                </v-col>
+
+              </v-row>
+            </v-container>
 
 
-              </thead>
-              <tbody class="FancyGrad text-center">
-              <tr
-                  v-for="x in skills"
-                  :key="x.requirement"
+            <div>
+
+              <v-simple-table
+                  style="padding-left: 50px;padding-right: 50px"
+
               >
-                <td>
-                  {{ x.requirement }}
-                </td>
+                <template
+                    v-slot:default
+                >
+                  <thead>
+                  <tr class="MetalGrad">
 
-                <td>
-                  {{ x.solution }}
-                </td>
-              </tr>
-              </tbody>
+                    <th style="border: #5D26C1">
+                      <h1
+                          style="font-family: Consolas,serif"
+                      >
+                        REQUIREMENT
+                      </h1>
+                    </th>
 
-            </template>
+                    <th>
+                      <h1
+                          style="font-family: Consolas,serif"
+                      >
+                        DESIGN
+                      </h1>
+                    </th>
+                  </tr>
 
-          </v-simple-table>
-        </div>
-      </v-card-text>
-    </v-card>
-  </v-flex>
+
+                  </thead>
+                  <tbody class="FancyGrad text-center">
+                  <tr
+                      v-for="x in skills"
+                      :key="x.requirement"
+                  >
+                    <td
+                        style="font-family: 'Nirmala UI',serif;"
+                    >
+                      {{ x.requirement }}
+                    </td>
+
+                    <td
+                        style="font-family: 'Nirmala UI',serif;"
+                    >
+                      {{ x.solution }}
+                    </td>
+                  </tr>
+                  </tbody>
+
+                </template>
+
+              </v-simple-table>
+            </div>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -160,10 +211,13 @@ export default {
 <style lang="sass" scoped>
 .text-center
   text-align: center
+
 </style>
 
 <style>
-
+h2 {
+  font-family: Georgia, serif;
+}
 
 a {
   color: #fe921f;

@@ -18,6 +18,6 @@ export default {
 
 <style>
 #app {
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 </style>

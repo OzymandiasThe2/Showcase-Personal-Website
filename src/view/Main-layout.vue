@@ -1,7 +1,11 @@
 <template>
   <div>
     <Topbar ref="pdf"  id="top-nav"/>
-    <about-vue id="about-me"/>
+    <about-vue
+        id="about-me"
+        style="margin-top: -280px"
+
+    />
     <Projects id="projects"/>
     <Footer id="footer"/>
 
