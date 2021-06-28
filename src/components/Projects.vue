@@ -171,6 +171,20 @@ export default {
       projects: [
         {
           "type": "Recent Project",
+          "name": "BGP using Bellman-Ford Algorithm",
+          "description": "A brief showcase of using the Bellman-Ford algorithmic technique for Border Gateway Protocol (BGP) weighting and how it might be routed in real world scenarios.",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bellman%E2%80%93Ford_algorithm_example.gif",
+          "links":
+              [
+                {
+                  "url": "https://github.com/OzymandiasThe2/BGP-using-Bellman-Ford-Algorithm",
+                  "name": "GitHub",
+                  "icon": "fab fa-github",
+                },
+              ],
+        },
+        {
+          "type": "Recent Project",
           "name": "Ciphered Text Generator",
           "description": "Encryption/Decryption algorithm made for a class project using Python, featuring multiple different ciphers from, RSA to Substitution.",
           "img": "https://i.imgur.com/sUSc7zm.png",
@@ -200,7 +214,7 @@ export default {
         {
           "type": "Recent Project",
           "name": "Tic-Tac-Toe",
-          "description": "Final project involving developing a game (Tioe) in MIPS assembly language",
+          "description": "Final project involving developing a game (Tic-Tac-Toe) in MIPS assembly language",
           "img": require("@/assets/images/tic_tac_toe.png"),
           "links":
               [
@@ -242,7 +256,7 @@ export default {
         {
           "type": "Capture the Flag Competition",
           "name": "UOIT's TacOps Fall 2020 CTF",
-          "description": "Achieved fourth place in a capture the flag hosted by the school's networking society, NETsoc. During the competition my group displayed knowledge in databases, stenography, encryption/decryption, programming, and fundamental networking and security knowledge.",
+          "description": "Achieved fourth place in a capture the flag hosted by the school's networking society, Netsoc. During the competition my group displayed knowledge in databases, stenography, encryption/decryption, programming, and fundamental networking and security knowledge.",
           "img": require("@/assets/images/netsoc-tacops.jpg"),
           "links":
               [

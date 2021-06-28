@@ -9,6 +9,8 @@
       <v-col
           v-for="url in urls"
           :key="url"
+          cols="12"
+          sm="4"
       >
         <v-list
             two-line
