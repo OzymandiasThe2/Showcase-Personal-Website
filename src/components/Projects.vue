@@ -185,7 +185,7 @@ export default {
         },
         {
           "type": "Recent Project",
-          "name": "Ciphered Text Generator",
+          "name": "Cipher Text Generator",
           "description": "Encryption/Decryption algorithm made for a class project using Python, featuring multiple different ciphers from, RSA to Substitution.",
           "img": "https://i.imgur.com/sUSc7zm.png",
           "links":

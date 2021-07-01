@@ -14,7 +14,7 @@
           </v-flex>
           <v-card-title>
             <img
-                src="@/assets/images/websiteLogo.png"
+                src="@/assets/images/websiteLogo.png" alt="logo failed to load"
                 style="display: block;margin-left: auto;margin-right: auto;margin-bottom: -70px"
             />
             <h2
@@ -39,7 +39,7 @@
               towards a bachelors degree in Networking and IT Security, but my passion for security goes back much
               further
               than that.
-              I am enthusiastic about learning cutting edge technology and I push myself to learn and innovative. I
+              I am enthusiastic about learning cutting edge technology and I push myself to learn and be innovative. I
               really
               enjoy python development and kotlin development.
               As part of my undergraduate studies I've learned core concepts in fundamental and advanced networking,
