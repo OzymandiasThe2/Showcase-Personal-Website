@@ -26,12 +26,12 @@
         <link>
         <a
             rel="canonical"
-            :href=pdfLink :download=pdfName
+            :href=resumeLink
         >
           <button
               class="cybr-btn">
             Résumé
-            <span class="cybr-btn__glitch">Cover Letter</span>
+            <span class="cybr-btn__glitch">Résumé</span>
             <span class="cybr-btn__tag"></span>
           </button>
         </a>
@@ -45,8 +45,7 @@ export default {
   name: "Topbar",
   data() {
     return {
-      pdfLink: require("@/assets/ShrijiShah-Cover+Resume.pdf"),
-      pdfName: "Shriji_Shah-Cover+Resume.pdf",
+      resumeLink: "https://docs.google.com/document/d/1zZD4F3UUzbPxI7vxbbujp9Ftpg6GLkAghlHMxcQ43BI/edit#heading=h.mofu6vopi18q"
     }
   },
 }
