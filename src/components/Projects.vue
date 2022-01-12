@@ -185,6 +185,20 @@ export default {
         },
         {
           "type": "Recent Project",
+          "name": "Cryptography Project",
+          "description": "A unique, original, and one-of-a-kind encryption system that was created for our final project for cryptography.",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Orange_blue_public_key_cryptography_en.svg",
+          "links":
+              [
+                {
+                  "url": "https://github.com/OzymandiasThe2/Cryptography-Project",
+                  "name": "GitHub",
+                  "icon": "fab fa-github",
+                },
+              ],
+        },
+        {
+          "type": "Recent Project",
           "name": "BGP using Bellman-Ford Algorithm",
           "description": "A brief showcase of using the Bellman-Ford algorithmic technique for Border Gateway Protocol (BGP) weighting and how it might be routed in real world scenarios.",
           "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bellman%E2%80%93Ford_algorithm_example.gif",
