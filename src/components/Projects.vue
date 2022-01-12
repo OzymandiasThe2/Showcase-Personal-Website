@@ -171,6 +171,20 @@ export default {
       projects: [
         {
           "type": "Recent Project",
+          "name": "Machine Learning Final Project",
+          "description": "A demonstration of using linear regression, polynomial regression, and deep neural network for machine learning.",
+          "img": "https://cdn.worldvectorlogo.com/logos/amazon-artificial-intelligence.svg",
+          "links":
+              [
+                {
+                  "url": "https://github.com/OzymandiasThe2/Machine-Learning-Final-Project",
+                  "name": "GitHub",
+                  "icon": "fab fa-github",
+                },
+              ],
+        },
+        {
+          "type": "Recent Project",
           "name": "BGP using Bellman-Ford Algorithm",
           "description": "A brief showcase of using the Bellman-Ford algorithmic technique for Border Gateway Protocol (BGP) weighting and how it might be routed in real world scenarios.",
           "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bellman%E2%80%93Ford_algorithm_example.gif",
