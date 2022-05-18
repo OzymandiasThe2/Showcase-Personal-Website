@@ -175,7 +175,7 @@ export default {
       skills: [
         {"requirement": "Editing", "solution": "Photoshop, Abode, GIMP, Microsoft Office Suite"},
         {"requirement": "Front-End", "solution": "VueJS, HTML, CSS, JavaScript, Materialize"},
-        {"requirement": "Back-End", "solution": "NodeJS, Mongo, Firebase Firestore, PHP, Express.js"},
+        {"requirement": "Back-End", "solution": "NodeJS, Mongo, Firebase Firestore, PHP, Express.js, Flask, Django"},
         {"requirement": "Scripting Languages", "solution": "Python, Kotlin, Java, C++ "},
         {"requirement": "Operating Systems", "solution": "Windows, Kali Linux"},
       ],
@@ -197,7 +197,7 @@ export default {
         {"icon": "fas fa-network-wired", "name": "Networking Fundamentals"},
         {"icon": "fas fa-ticket-alt", "name": "Ticketing"},
         {"icon": "fas fa-desktop", "name": "Desktop Support"},
-        {"icon": "fas fa-palette", "name": "Web Design"},
+        {"icon": "fas fa-palette", "name": "Web Development"},
         {"icon": "fas fa-book", "name": "Technical Documentation"},
         {"icon": "fas fa-gamepad", "name": "Game Development"},
       ],

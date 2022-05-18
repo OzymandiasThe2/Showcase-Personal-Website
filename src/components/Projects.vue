@@ -136,8 +136,9 @@
                         {{ p.name }}
                       </v-card-title>
                       <v-card-text
-                          style="font-family: 'Nirmala UI',serif;">
-                        {{ p.description }}
+                          style="font-family: 'Nirmala UI',serif; ">
+                        <span style="white-space: pre-wrap; ">{{ p.description }}</span>
+<!--                        {{ p.description }}-->
                       </v-card-text>
                       <v-card-actions>
                         <v-spacer/>
@@ -169,6 +170,39 @@ export default {
     return {
       cycle: true,
       projects: [
+        {
+          "type": "Recent Project",
+          "name": "Database Systems Final Project",
+          "description": "For my final project for Database Systems, my group was tasked with creating a website that's databases should contain at least 5 relations (tables) and could be queried. " +
+              "I was in a group of 4 and was the sole programmer of the group, so I programmed the entirety of the site. Our object was to make a functional Spotify/Napster clone, where users could upload any music and share it." +
+              "\n - Backend Implementation: I made the website using Django as our class was framed around using Flask + python, so to challenge myself, I used Django a similar Python-based backend for development. " +
+              "\n - Frontend Implementation: Frontend wasn't a priority, so it was just basic HTML/CSS" +
+              "\n - Database Implementation: SQLite3, as it was a lightweight database to work with.",
+          "img": "https://i.imgur.com/48s4xtg.jpg",
+          "links":
+              [
+                {
+                  "url": "https://github.com/OzymandiasThe2/SpotifyClone-Django",
+                  "name": "GitHub",
+                  "icon": "fab fa-github",
+                },
+              ],
+        },
+        {
+          "type": "Capture the Flag Competition",
+          "name": "UOIT's TacOps Fall 2022 CTF",
+          "description": "Achieved 1st place in a capture the flag hosted by the school's networking society, Netsoc. " +
+              " This was the same team that I previously was in for my second year CTF in 2020 with our team name being RIPv2. ",
+          "img": "https://i.imgur.com/k5mHpqt.png",
+          "links":
+              [
+                {
+                  "url": "https://netsocot.com",
+                  "linktype": "Networking Society",
+                  "icon": "fas fa-award"
+                },
+              ],
+        },
         {
           "type": "Recent Project",
           "name": "Machine Learning Final Project",
