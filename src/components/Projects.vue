@@ -87,20 +87,10 @@
                                   dark
                                   elevation="5"
                                   color="green darken-1"
-
                               >
 
-                                <a
-                                    :href="links.url"
-                                    text-decoration="none"
-                                    style="text-decoration: none"
-
-                                >
-                                  <v-icon
-                                      dark
-                                      :href="links.url"
-                                      x-large
-                                  >
+                                <a :href="links.url" style="text-decoration: none" >
+                                  <v-icon dark :href="links.url" x-large>
                                     {{ links.icon }}
                                   </v-icon>
                                 </a>
@@ -138,7 +128,7 @@
                       <v-card-text
                           style="font-family: 'Nirmala UI',serif; ">
                         <span style="white-space: pre-wrap; ">{{ p.description }}</span>
-<!--                        {{ p.description }}-->
+                        <!--                        {{ p.description }}-->
                       </v-card-text>
                       <v-card-actions>
                         <v-spacer/>
@@ -171,7 +161,7 @@ export default {
       cycle: true,
       projects: [
         {
-          "type": "Recent Project",
+          "type": "2022 Project",
           "name": "Database Systems Final Project",
           "description": "For my final project for Database Systems, my group was tasked with creating a website that's databases should contain at least 5 relations (tables) and could be queried. " +
               "I was in a group of 4 and was the sole programmer of the group, so I programmed the entirety of the site. Our object was to make a functional Spotify/Napster clone, where users could upload any music and share it." +
@@ -204,7 +194,7 @@ export default {
               ],
         },
         {
-          "type": "Recent Project",
+          "type": "2022 Project",
           "name": "Machine Learning Final Project",
           "description": "A demonstration of using linear regression, polynomial regression, and deep neural network for machine learning.",
           "img": "https://cdn.worldvectorlogo.com/logos/amazon-artificial-intelligence.svg",
@@ -218,7 +208,7 @@ export default {
               ],
         },
         {
-          "type": "Recent Project",
+          "type": "2021 Project",
           "name": "Cryptography Project",
           "description": "A unique, original, and one-of-a-kind encryption system that was created for our final project for cryptography.",
           "img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Orange_blue_public_key_cryptography_en.svg",
@@ -232,7 +222,7 @@ export default {
               ],
         },
         {
-          "type": "Recent Project",
+          "type": "2021 Project",
           "name": "BGP using Bellman-Ford Algorithm",
           "description": "A brief showcase of using the Bellman-Ford algorithmic technique for Border Gateway Protocol (BGP) weighting and how it might be routed in real world scenarios.",
           "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bellman%E2%80%93Ford_algorithm_example.gif",
@@ -246,7 +236,7 @@ export default {
               ],
         },
         {
-          "type": "Recent Project",
+          "type": "2021 Project",
           "name": "Cipher Text Generator",
           "description": "Encryption/Decryption algorithm made for a class project using Python, featuring multiple different ciphers from, RSA to Substitution.",
           "img": "https://i.imgur.com/sUSc7zm.png",
@@ -260,7 +250,7 @@ export default {
               ],
         },
         {
-          "type": "Recent Project",
+          "type": "2020 Project",
           "name": "Fork-Bomb/Wabbit Virus",
           "description": "Fork bomb made as a demonstration of JavaScript XSS project for Computer Security",
           "img": require("@/assets/images/Fork_bomb.svg"),
@@ -274,7 +264,7 @@ export default {
               ],
         },
         {
-          "type": "Recent Project",
+          "type": "2019 Project",
           "name": "Tic-Tac-Toe",
           "description": "Final project involving developing a game (Tic-Tac-Toe) in MIPS assembly language",
           "img": require("@/assets/images/tic_tac_toe.png"),
