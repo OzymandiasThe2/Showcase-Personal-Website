@@ -173,7 +173,7 @@ export default {
   data() {
     return {
       skills: [
-        {"requirement": "Editing", "solution": "Photoshop, Abode, GIMP, Microsoft Office Suite"},
+        {"requirement": "Editing", "solution": "Photoshop, Adobe, GIMP, Microsoft Office Suite"},
         {"requirement": "Front-End", "solution": "VueJS, HTML, CSS, JavaScript, Materialize"},
         {"requirement": "Back-End", "solution": "NodeJS, Mongo, Firebase Firestore, PHP, Express.js, Flask, Django"},
         {"requirement": "Scripting Languages", "solution": "Python, Kotlin, Java, C++ "},
@@ -182,7 +182,7 @@ export default {
       love: [
         {"icon": "Things I'm Passionate About:", "color": "#fe921f"},
         {"icon": "fab fa-vuejs", "name": "VueJS", "color": "#41B883"},
-        {"icon": "fab fa-html5", "name": "HMTL", "color": "#fe921f"},
+        {"icon": "fab fa-html5", "name": "HTML", "color": "#fe921f"},
         {"icon": "fab fa-css3-alt", "name": "CSS", "color": "#264de4"},
         {"icon": "fab fa-js", "name": "JavaScript", "color": "#f0db4f"},
         {"icon": "fab fa-python", "name": "Python", "color": "#FFE873"},
