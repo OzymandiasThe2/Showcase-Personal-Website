@@ -144,6 +144,14 @@ export default {
           "description": "I was need a cloud solution to manage all my different servers and computers, and I came across Apache Guacamole which was FOSS." +
               "\nWIth the help of Amazon's EC2 free tier virtualization, I setup up a Cloudron instance to setup and install an Guacamole server where I can now remote into my devices through the web",
           "img": "https://i.imgur.com/BbE4Ifp.jpg",
+          "links":
+              [
+                {
+                  "url": "https://journal-ozymandias.netlify.app/technology/random-tech/apache-guacamole/",
+                  "name": "Journal Page",
+                  "icon": "fa-regular fa-book",
+                },
+              ],
         },
         {
           "type": "Personal Hobby Project",
@@ -151,6 +159,14 @@ export default {
           "description": "Used the Oracle Cloud free tier to virtualize a live server to host a virtual table top game software called FoundryVTT where I can host games like D&D and Pathfinder online with my friends." +
               "\nPerks of the Oracle Cloud compared to other services like Amazon, is the free tier offers a better computing power and storage.",
           "img": "https://www.oracle.com/a/ocom/img/social-og-oci-logo-1200x1200.jpg",
+          "links":
+              [
+                {
+                  "url": "https://journal-ozymandias.netlify.app/technology/random-tech/oracle-cloud-vtt-instance/",
+                  "name": "Journal Page",
+                  "icon": "fa-regular fa-book",
+                },
+              ],
         },
         {
           "type": "Summer 2022 Internship",
