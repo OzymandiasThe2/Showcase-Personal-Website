@@ -139,9 +139,51 @@ export default {
       cycle: true,
       projects: [
         {
+          "type": "2022 Mobile Dev Project",
+          "name": "Uber Eats Clone",
+          "description": "A very basic Uber Eats style application made with Kotlin for Android devices.\n with basic features like adding to cart, restaurant lists, food quantity and profile data",
+          "img": "https://i.imgur.com/dHSRcyZ.png",
+          "links":
+              [
+                {
+                  "url": "https://github.com/OzymandiasThe2/Omeal-Mobile-App-INFR4599U",
+                  "name": "GitHub ",
+                  "icon": "fab fa-github",
+                },
+              ],
+        },
+        {
+          "type": "2022 Mobile Dev Project",
+          "name": "Memory Matching Game for Android",
+          "description": "A simple matching game made using Java for Android",
+          "img": "https://i.imgur.com/wqE5hlS.png",
+          "links":
+              [
+                {
+                  "url": "https://github.com/OzymandiasThe2/Matching-Game-Java-Android",
+                  "name": "GitHub ",
+                  "icon": "fab fa-github",
+                },
+              ],
+        },
+        {
+          "type": "2022 Penetration Testing Project",
+          "name": "Mr. Robot - Vulnhub Box",
+          "description": "A beginner level vulnerable VM where I have to find the three keys. Based on the show Mr.Robot, overall it was pretty fun. Funnily key1 was the hardest to find compared to the rest of the keys.",
+          "img": "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2017/10/11055507/mr-robot-safety-tips-featured.jpg",
+          "links":
+              [
+                {
+                  "url": "https://www.vulnhub.com/entry/mr-robot-1,151/",
+                  "name": "Mr Robot Vulnhub Page",
+                  "icon": "fa-regular fa-book",
+                },
+              ],
+        },
+        {
           "type": "Personal Hobby Project",
           "name": "Amazon EC2 + Apache Guacamole RMM Setup",
-          "description": "I was need a cloud solution to manage all my different servers and computers, and I came across Apache Guacamole which was FOSS." +
+          "description": "I was in need of a cloud solution to manage all my different servers and computers, and I came across Apache Guacamole which was FOSS." +
               "\nWIth the help of Amazon's EC2 free tier virtualization, I setup up a Cloudron instance to setup and install an Guacamole server where I can now remote into my devices through the web",
           "img": "https://i.imgur.com/BbE4Ifp.jpg",
           "links":
@@ -186,7 +228,7 @@ export default {
               ],
         },
         {
-          "type": "2022 Project",
+          "type": "2022 Database Project",
           "name": "Database Systems Final Project",
           "description": "For my final project for Database Systems, my group was tasked with creating a website that's databases should contain at least 5 relations (tables) and could be queried. " +
               "I was in a group of 4 and was the sole programmer of the group, so I programmed the entirety of the site. Our object was to make a functional Spotify/Napster clone, where users could upload any music and share it." +
@@ -219,7 +261,7 @@ export default {
               ],
         },
         {
-          "type": "2022 Project",
+          "type": "2022 Machine Learning Project",
           "name": "Machine Learning Final Project",
           "description": "A demonstration of using linear regression, polynomial regression, and deep neural network for machine learning.",
           "img": "https://cdn.worldvectorlogo.com/logos/amazon-artificial-intelligence.svg",
@@ -233,7 +275,7 @@ export default {
               ],
         },
         {
-          "type": "2021 Project",
+          "type": "2021 Cryptography Project",
           "name": "Cryptography Project",
           "description": "A unique, original, and one-of-a-kind encryption system that was created for our final project for cryptography.",
           "img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Orange_blue_public_key_cryptography_en.svg",
@@ -247,7 +289,7 @@ export default {
               ],
         },
         {
-          "type": "2021 Project",
+          "type": "Personal Hobby Project",
           "name": "BGP using Bellman-Ford Algorithm",
           "description": "A brief showcase of using the Bellman-Ford algorithmic technique for Border Gateway Protocol (BGP) weighting and how it might be routed in real world scenarios.",
           "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bellman%E2%80%93Ford_algorithm_example.gif",
@@ -261,7 +303,7 @@ export default {
               ],
         },
         {
-          "type": "2021 Project",
+          "type": "2021 Cryptography Project",
           "name": "Cipher Text Generator",
           "description": "Encryption/Decryption algorithm made for a class project using Python, featuring multiple different ciphers from, RSA to Substitution.",
           "img": "https://i.imgur.com/sUSc7zm.png",
@@ -275,7 +317,7 @@ export default {
               ],
         },
         {
-          "type": "2020 Project",
+          "type": "2020 Cyber Security Project",
           "name": "Fork-Bomb/Wabbit Virus",
           "description": "Fork bomb made as a demonstration of JavaScript XSS project for Computer Security",
           "img": require("@/assets/images/Fork_bomb.svg"),
@@ -289,7 +331,7 @@ export default {
               ],
         },
         {
-          "type": "2019 Project",
+          "type": "2019 Assembly Project",
           "name": "Tic-Tac-Toe",
           "description": "Final project involving developing a game (Tic-Tac-Toe) in MIPS assembly language",
           "img": require("@/assets/images/tic_tac_toe.png"),

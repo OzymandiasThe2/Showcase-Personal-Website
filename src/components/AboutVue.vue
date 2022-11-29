@@ -89,8 +89,7 @@
                 font-size: large;
                 margin-right: 50px;
                 margin-left: 50px;
-                padding-bottom: 15px"
-            >
+                padding-bottom: 15px">
               I am an undergraduate from the University of Ontario Institute of Technology (OnTechU) currently working
               towards a bachelors degree in Networking and IT Security, but my passion for security goes back much
               further
