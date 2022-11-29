@@ -141,7 +141,7 @@ export default {
         {
           "type": "2022 Mobile Dev Project",
           "name": "Uber Eats Clone",
-          "description": "A very basic Uber Eats style application made with Kotlin for Android devices.\n with basic features like adding to cart, restaurant lists, food quantity and profile data",
+          "description": "A very basic Uber Eats style application made with Kotlin for Android devices.\nBasic features like adding to cart, restaurant lists, food quantity and profile data",
           "img": "https://i.imgur.com/dHSRcyZ.png",
           "links":
               [
