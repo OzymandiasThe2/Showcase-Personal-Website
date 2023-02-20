@@ -247,7 +247,7 @@ export default {
         {"icon": "fab fa-java", "name": "Kotlin/Java", "color": "#f89820"},
         {"icon": "fab fa-linux", "name": "Linux", "color": "#E95420"},
         {"icon": "fa-dice-d20", "name": "Table Top Games", "color": "#e92020"},
-        {"icon": "fab fa-linux", "name": "Linux", "color": "#E95420"},
+        {"icon": "fas fa-server", "name": "Hyper-V", "color": "#E95420"},
         {"icon": "fab fa-windows", "name": "Windows OS", "color": "#00BCF2"},
       ],
       activities: [
