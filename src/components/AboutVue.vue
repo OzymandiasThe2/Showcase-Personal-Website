@@ -229,7 +229,7 @@ export default {
   components: {curriculumBox},
   data() {
     return {
-      resumeLink: "https://drive.google.com/file/d/14pMjTSAvZV1we2CvbhtAXjAy6mhLTHHj/view?usp=sharing",
+      resumeLink: "https://drive.google.com/file/d/1C8sxH96b_nPo0irWmihMFcG97SW2__VT/view?usp=share_link",
       skills: [
         {"requirement": "Editing", "solution": "Photoshop, Adobe, GIMP, Microsoft Office Suite"},
         {"requirement": "Front-End", "solution": "VueJS, HTML, CSS, JavaScript, Materialize"},

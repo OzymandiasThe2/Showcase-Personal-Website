@@ -40,10 +40,10 @@
                       ></v-img>
 
                       <v-card-title>
-                        {{ p.type }}
+                        {{ p.name }}
                       </v-card-title>
                       <v-card-subtitle>
-                        {{ p.name }}
+                        {{ p.type }}
                       </v-card-subtitle>
                         <div></div>
 
@@ -138,6 +138,51 @@ export default {
     return {
       cycle: true,
       projects: [
+        {
+          "type": "Personal Hobby Project",
+          "name": "Capture the Flag Toolkit",
+          "description": "A FastAPI based toolkit I created to automate simple commands expected for Capture the Flag competitions as well as some Forensic Security tasks. The project is built using FastAPI and is designed to automate repetitive tasks and provide quick results.",
+          "img": "https://amalgjose.files.wordpress.com/2021/02/fast_api_ppt.png",
+          "links":
+              [
+                {
+                  "url": "https://github.com/OzymandiasThe2/fastapi-ctf",
+                  "name": "GitHub",
+                  "icon": "fab fa-github",
+                },
+              ],
+        },
+        {
+          "type": "Capture the Flag Competition",
+          "name": "UOIT's TacOps March 2023 CTF",
+          "description": "Achieved 7th place in a capture the flag hosted by the school's networking society, NetSoc.",
+          "img": "https://i.imgur.com/NYS4cEg.png",
+          "links":
+              [
+                {
+                  "url": "https://tacops.netsoc.ca/users/64",
+                  "linktype": "Networking Society CTF Website",
+                  "icon": "fas fa-award"
+                },
+              ],
+        },
+        {
+          "type": "Winter 2022 Co-Op",
+          "name": "Nokia",
+          "description": "Started my co-op with Nokia Jan 2023. So far I've done:" +
+              "\n - Packet Capturing and PCAP analysis" +
+              "\n - Automation testing" +
+              "\n - FastAPI, OpenAPI, CI/CD pipelines",
+          "img": "https://www.nokia.com/sites/default/files/styles/scale_543_x_375_gallery/public/2023-02/nokia-refreshed-logo-2_1.png",
+          "links":
+              [
+                {
+                  "url": "https://www.nokia.com/",
+                  "name": "Nokia Homepage",
+                  "icon": "fa-regular fa-globe",
+                },
+              ],
+        },
         {
           "type": "2022 Mobile Dev Project",
           "name": "Uber Eats Clone",
