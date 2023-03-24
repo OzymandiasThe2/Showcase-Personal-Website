@@ -1,129 +1,50 @@
 <template>
   <v-app id="inspire">
-    <div
-        style="background: #1E1E1E"
-    >
-      <v-container
-      >
-        <v-card
-            dark
-            class="mx-auto"
-            max-width="90%"
-        >
-          <v-container
-              style="margin-bottom: 50px"
-          >
-            <v-row
-                no-gutters
-            >
-              <v-col
-                  v-for="p in projects"
-                  :key="p"
-                  cols="12"
-                  sm="6"
-              >
-                <v-dialog
-                    :fullscreen="$vuetify.breakpoint.xs"
-                    transition="dialog-top-transition"
-                    open-delay="0"
-                    max-width="500"
-                >
+    <div style="background: #1E1E1E">
+      <v-container>
+        <v-card dark class="mx-auto" max-width="90%">
+          <v-container style="margin-bottom: 50px">
+            <v-row no-gutters>
+              <v-col v-for="p in projects" :key="p" cols="12" sm="6">
+                <v-dialog :fullscreen="$vuetify.breakpoint.xs" transition="dialog-top-transition" open-delay="0" max-width="500">
                   <template v-slot:activator="{ on, attrs }">
-
-                    <v-card
-                        class="mx-auto"
-                    >
-                      <v-img
-                          contain
-                          :src="p.img"
-                          height="200px"
-                      ></v-img>
-
-                      <v-card-title>
-                        {{ p.name }}
-                      </v-card-title>
-                      <v-card-subtitle>
-                        {{ p.type }}
-                      </v-card-subtitle>
-                        <div></div>
-
-                        <v-card-actions
-                            style="max-height: 80px"
-                        >
-                          <v-list-item class="center">
-                            <v-list-item-icon>
-                              <v-hover>
-                                <template v-slot:default="{ hover }">
-                                  <v-btn
-                                      outlined
-                                      v-for="links in p.links"
-                                      :key="links"
-                                      icon
-                                      fab
-                                      dark
-                                      :elevation="hover ? 24 : 6"
-                                      class="mx-auto pa-6"
-                                      color="orange lighten-2"
-                                  >
-
-                                    <a :href="links.url" style="text-decoration: none" >
-                                      <v-icon dark :href="links.url" x-large>
-                                        {{ links.icon }}
-                                      </v-icon>
-                                    </a>
-                                  </v-btn>
-                                </template>
-                              </v-hover>
-
-                            </v-list-item-icon>
-                          </v-list-item>
-
-                          <v-btn
-                              outlined
-                              elevation="10"
-                              rounded
-                              text
-                              v-bind="attrs"
-                              v-on="on"
-                              style="font-family: 'Nirmala UI',serif;"
-                          >
-                            Information
-                          </v-btn>
-                        </v-card-actions>
-                      </v-card>
+                    <v-card class="mx-auto">
+                      <v-img contain :src="p.img" height="200px"></v-img>
+                      <v-card-title>{{ p.name }}</v-card-title>
+                      <v-card-subtitle>{{ p.type }}</v-card-subtitle>
+                      <v-card-actions style="max-height: 80px">
+                        <v-list-item class="center">
+                          <v-list-item-icon>
+                            <v-hover>
+                              <template v-slot:default="{ hover }">
+                                <v-btn outlined v-for="links in p.links" :key="links" icon fab dark :elevation="hover ? 24 : 6" class="mx-auto pa-6" color="orange lighten-2">
+                                  <a :href="links.url" style="text-decoration: none">
+                                    <v-icon dark :href="links.url" x-large>
+                                      {{ links.icon }}
+                                    </v-icon>
+                                  </a>
+                                </v-btn>
+                              </template>
+                            </v-hover>
+                          </v-list-item-icon>
+                        </v-list-item>
+                        <v-btn outlined elevation="10" rounded text v-bind="attrs" v-on="on" style="font-family: 'Nirmala UI',serif;">Information</v-btn>
+                      </v-card-actions>
+                    </v-card>
                   </template>
-                  <template
-                      v-slot:default="dialog"
-                  >
-                    <v-card
-                        dark
-                    >
-                      <v-card-title
-                          class="headline"
-                          style="font-family: 'Nirmala UI',serif;"
-                      >
-                        {{ p.name }}
-                      </v-card-title>
-                      <v-card-text
-                          style="font-family: 'Nirmala UI',serif; ">
-                        <span style="white-space: pre-wrap; ">{{ p.description }}</span>
-                      </v-card-text>
+                  <template v-slot:default="dialog">
+                    <v-card dark>
+                      <v-card-title class="headline" style="font-family: 'Nirmala UI',serif;">{{ p.name }}</v-card-title>
+                      <v-card-text style="font-family: 'Nirmala UI',serif;"><span style="white-space: pre-wrap;">{{ p.description }}</span></v-card-text>
                       <v-card-actions>
-                        <v-spacer/>
-                        <v-btn
-                            color="orange lighten-2"
-                            text
-                            @click="dialog.value = false"
-                        >
-                          Close
-                        </v-btn>
+                        <v-spacer />
+                        <v-btn color="orange lighten-2" text @click="dialog.value = false">Close</v-btn>
                       </v-card-actions>
                     </v-card>
                   </template>
                 </v-dialog>
               </v-col>
             </v-row>
-
           </v-container>
         </v-card>
       </v-container>
