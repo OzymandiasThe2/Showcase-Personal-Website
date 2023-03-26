@@ -3,6 +3,9 @@ https://shrijishah.com/
 
 A simple and clean website I made primarily using Vue and Vuetify. 
 
+![image](https://user-images.githubusercontent.com/62310972/227763369-e4087324-2c4b-49d0-bb55-52cd6cc4c0b3.png)
+
+
 
 ## Project Installation and Setup
 
